@@ -68,10 +68,10 @@ async def is_admins(chat_id: int):
 
 @bot.on_message(filters.command("start") & filters.private)
 async def start_(client: Client, message: Message):
-        response = requests.get(url).json()
+    response = requests.get(url).json()
     try:
         up = response['url']
-    await message.reply_photo(up,
+        await message.reply_photo(up,
         caption=f"""**
         ━━━━━━━━━━━━━━━━━━❥
         
