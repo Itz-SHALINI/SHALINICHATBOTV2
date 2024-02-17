@@ -124,15 +124,15 @@ async def start(client: Client, message: Message):
     except:
         await message.reply_photo(up,
             caption=f"""**
-            ━━━━━━━━━━━━━━━━━━❥
+━━━━━━━━━━━━━━━━━━❥
             
-           ✯ Hᴇʟʟᴏ Tʜᴇʀᴇ I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨
-           ✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ
-           ✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ 
-           ✯ /chatbot on|off 
-           ✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ
+✯ Hᴇʟʟᴏ Tʜᴇʀᴇ I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨
+✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ
+✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ 
+✯ /chatbot on|off 
+✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ
             
-            ━━━━━━━━━━━━━━━━━━❥
+━━━━━━━━━━━━━━━━━━❥
 **""",
             reply_markup=InlineKeyboardMarkup(STBUTTON)
         )
