@@ -18,13 +18,43 @@ OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "none")
 SUPPORT_GROUP = os.environ.get("SUPPORT_GROUP", "none")
 UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "none")
 
-
 bot = Client(
     "V_Chat_Bot" ,
     api_id = API_ID,
     api_hash = API_HASH ,
     bot_token = BOT_TOKEN
 )
+
+
+STBUTTON = [
+  [
+       InlineKeyboardButton(
+    text="Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+    url=f"https://t.me/Shalini_chat_Bot?startgroup=true",
+        ),
+  ],
+  [
+    InlineKeyboardButton(
+      text="Uᴘᴅᴀᴛᴇs",
+      url=f"https://t.me/ShaliniMusicBotSh",
+    ),
+    InlineKeyboardButton(
+      text="Sᴜᴘᴘᴏʀᴛ",
+      url=f"https://t.me/music_world_sh",
+    ),
+  ],
+  [
+    InlineKeyboardButton(
+      text="Dᴇᴠᴇʟᴏᴘᴇʀ",
+      url=f"tg://openmessage?user_id=6910477574",
+    ),
+  ],
+]
+
+
+pht_list = ["neko"]
+pht = random.choice(pht_list)
+url = f"https://api.waifu.pics/sfw/{pht}"
 
 
 async def is_admins(chat_id: int):
@@ -38,8 +68,10 @@ async def is_admins(chat_id: int):
 
 @bot.on_message(filters.command("start") & filters.private)
 async def start_(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"{BOT_IMAGE}",
+        response = requests.get(url).json()
+    try:
+        up = response['url']
+    await message.reply_photo(up,
         caption=f"""**
         ━━━━━━━━━━━━━━━━━━❥
         
@@ -51,22 +83,30 @@ async def start_(client: Client, message: Message):
         
         ━━━━━━━━━━━━━━━━━━❥
 **""",
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "➕ ❰ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ❱ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
-                ]
-                
-           ]
-        ),
-    )
+    reply_markup=InlineKeyboardMarkup(STBUTTON)
+                except:
+                await message.reply_photo(up,
+        caption=f"""**
+        ━━━━━━━━━━━━━━━━━━❥
+        
+       ✯ Hᴇʟʟᴏ Tʜᴇʀᴇ I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨
+       ✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ
+       ✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ 
+       ✯ /chatbot on|off 
+       ✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ
+        
+        ━━━━━━━━━━━━━━━━━━❥
+**""",
+    reply_markup=InlineKeyboardMarkup(STBUTTON)
+        
     
     
 @bot.on_message(filters.command(["/start", f"start@{BOT_USERNAME}", "/alive", ".alive", "#bikash", "#aditya"]) & filters.group)
 async def start(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"{BOT_IMAGE}",
+    response = requests.get(url).json()
+    try:
+        up = response['url']
+    await message.reply_photo(up,
         caption=f"""💥 𝐇𝐢! 𝐈'𝐦 𝐀 𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 🌷.\n\n📌 𝐌𝐲 𝐍𝐚𝐦𝐞 𝐈𝐬 𝐕 𝐁𝐨𝐭 🌷 𝐅𝐨𝐫𝐦 𝐈𝐧𝐝𝐢𝐚 🇮🇳 \n\n🌷 𝐈'𝐦 𝐀 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐈𝐧𝐭𝐞𝐥𝐥𝐢𝐠𝐞𝐧𝐜𝐞 🌷\n\n𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GROUP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHANNEL}) 🌷\n\n /chatbot - [on|off]""",
         reply_markup=InlineKeyboardMarkup(
             [
