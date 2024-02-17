@@ -77,17 +77,7 @@ async def start_(client: Client, message: Message):
         )
     except:
         await message.reply_photo(up,
-            caption=f"""**
-            ━━━━━━━━━━━━━━━━━━❥
-            
-           ✯ Hᴇʟʟᴏ Tʜᴇʀᴇ I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨
-           ✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ
-           ✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ 
-           ✯ /chatbot on|off 
-           ✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ
-            
-            ━━━━━━━━━━━━━━━━━━❥
-**""",
+            caption=f"""**━━━━━━━━━━━━━━━━━━❥\n\n✯ Hᴇʟʟᴏ Tʜᴇʀᴇ I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨\n✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ\n✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ \n✯ /chatbot on|off \n✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ\n\n━━━━━━━━━━━━━━━━━━❥**""",
             reply_markup=InlineKeyboardMarkup(STBUTTON)
         )
 
@@ -98,32 +88,12 @@ async def start(client: Client, message: Message):
     try:
         up = response['url']
         await message.reply_photo(up,
-            caption=f"""**
-            ━━━━━━━━━━━━━━━━━━❥
-            
-           ✯ Hᴇʟʟᴏ Tʜᴇʀᴇ I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨
-           ✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ
-           ✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ 
-           ✯ /chatbot on|off 
-           ✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ
-            
-            ━━━━━━━━━━━━━━━━━━❥
-**""",
+            caption=f"""**━━━━━━━━━━━━━━━━━━❥\n\n✯ Hᴇʟʟᴏ Tʜᴇʀᴇ I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨\n✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ\n✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ \n✯ /chatbot on|off \n✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ\n\n━━━━━━━━━━━━━━━━━━❥**""",
             reply_markup=InlineKeyboardMarkup(STBUTTON)
         )
     except:
         await message.reply_photo(up,
-            caption=f"""**
-━━━━━━━━━━━━━━━━━━❥
-            
-✯ Hᴇʟʟᴏ Tʜᴇʀᴇ I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨
-✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ
-✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ 
-✯ /chatbot on|off 
-✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ
-            
-━━━━━━━━━━━━━━━━━━❥
-**""",
+            caption=f"""**━━━━━━━━━━━━━━━━━━❥\n\n✯ Hᴇʟʟᴏ Tʜᴇʀᴇ I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨\n✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ\n✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ \n✯ /chatbot on|off \n✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ\n\n━━━━━━━━━━━━━━━━━━❥**""",
             reply_markup=InlineKeyboardMarkup(STBUTTON)
         )
 
