@@ -12,3 +12,16 @@
 <h3 align="center">
     
 <a href="https://www.youtube.com/watch?v=Qw4w9gXcQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+
+
+<h3 align="center">
+    ─「 ᴄʀᴇᴅɪᴛs 」─
+</h3>
+
+<details>
+<summary><b>ʙɪɢ ᴄʀᴇᴅɪᴛs</b></summary>
+<br>
+
+- [Pyrogram](https://github.com/pyrogram/pyrogram)
+- [SAGAR](https://t.me/dil_sagar_121)
+- [BGT](https://t.me/Bgt_Chat)
