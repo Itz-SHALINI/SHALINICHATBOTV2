@@ -9,7 +9,6 @@ import re
 
 from os import getenv
 import time
-from dotenv import load_dotenv
 
 
 API_ID = os.environ.get("API_ID", "none") 
