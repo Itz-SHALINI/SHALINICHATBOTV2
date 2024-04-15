@@ -415,7 +415,7 @@ async def on_new_chat_members(client: Client, message: Message):
             f"┗━━━━━━━━━★ "
         )
         await bot.send_photo(LOG_GROUP_ID, photo=image_url, caption=msg, reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("sᴇᴇ ʙᴏᴛ ᴀᴅᴅᴇᴅ ɢʀᴏᴜᴘ", url=chatusername)]
+            [InlineKeyboardButton("owner", url=f"https://t.me/itz_shalini")]
         ]))
 
 @bot.on_message(filters.left_chat_member)
