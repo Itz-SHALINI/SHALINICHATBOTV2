@@ -17,8 +17,7 @@ BOT_USERNAME = os.environ.get("BOT_USERNAME", "none")
 OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "none")
 SUPPORT_GROUP = os.environ.get("SUPPORT_GROUP", "none")
 UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "none")
-LOG_GROUP_ID = "-1002041372224"
-
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002041372224"))
 bot = Client(
     "V_Chat_Bot" ,
     api_id = API_ID,
@@ -391,7 +390,7 @@ async def on_new_chat_members(client: Client, message: Message):
         matlabi_jhanto = message.chat.title
         response = requests.get("https://nekos.best/api/v2/neko").json()
         image_url = response["results"][0]["url"]
-        served_chats = len(await get_served_chats())
+    #    served_chats = len(await get_served_chats())
         chat_id = message.chat.id
         if message.chat.username:
             chatusername = f"@{message.chat.username}"
