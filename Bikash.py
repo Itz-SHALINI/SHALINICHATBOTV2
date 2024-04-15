@@ -17,6 +17,7 @@ BOT_USERNAME = os.environ.get("BOT_USERNAME", "none")
 OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "none")
 SUPPORT_GROUP = os.environ.get("SUPPORT_GROUP", "none")
 UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "none")
+LOG_GROUP_ID = "-1002041372224"
 
 bot = Client(
     "V_Chat_Bot" ,
