@@ -72,17 +72,17 @@ async def start_(client: Client, message: Message):
     try:
         up = response['url']
         await message.reply_photo(up,
-            caption=f"""**━━━━━━━━━━━━━━━━━━❥\n\n✯ Hᴇʟʟᴏ Tʜᴇʀᴇ I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨\n✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ\n✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ \n✯ /chatbot on|off \n✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ\n\n━━━━━━━━━━━━━━━━━━❥**""",
+            caption=f"""**━━━━━━━━━━━━━━━━━━❥\n\n✯ Hᴇʟʟᴏ {message.from_user.mention} \n✯I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨\n✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ\n✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ \n✯ /chatbot on|off \n✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ\n\n━━━━━━━━━━━━━━━━━━❥**""",
             reply_markup=InlineKeyboardMarkup(STBUTTON)
         )
     except:
         await message.reply_photo(up,
-            caption=f"""**━━━━━━━━━━━━━━━━━━❥\n\n✯ Hᴇʟʟᴏ Tʜᴇʀᴇ I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨\n✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ\n✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ \n✯ /chatbot on|off \n✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ\n\n━━━━━━━━━━━━━━━━━━❥**""",
+            caption=f"""**━━━━━━━━━━━━━━━━━━❥\n\n✯ Hᴇʟʟᴏ {message.from_user.mention} \n✯I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨\n✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ\n✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ \n✯ /chatbot on|off \n✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ\n\n━━━━━━━━━━━━━━━━━━❥**""",
             reply_markup=InlineKeyboardMarkup(STBUTTON)
         )
 
     
-@bot.on_message(filters.command(["/start", f"start@{BOT_USERNAME}", "/alive", ".alive", "#bikash", "#aditya"]) & filters.group)
+@bot.on_message(filters.command(["/start", f"start@{BOT_USERNAME}", "/alive", ".alive"]) & filters.group)
 async def start(client: Client, message: Message):
     response = requests.get(url).json()
     try:
