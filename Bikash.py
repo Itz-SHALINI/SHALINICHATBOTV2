@@ -66,12 +66,7 @@ async def is_admins(chat_id: int):
         )
     ]
 
-            sender_id = message.from_user.id
-            sender_name = message.from_user.first_name
-            return await app.send_message(
-                config.LOG_GROUP_ID,
-                f"{message.from_user.mention} has just started Bot.\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
-
+            
 @bot.on_message(filters.command("start") & filters.private)
 async def start_(client: Client, message: Message):
     response = requests.get(url).json()
@@ -417,7 +412,7 @@ async def on_new_chat_members(client: Client, message: Message):
             f"┣★ **ᴀᴅᴅᴇᴅ ʙʏ** › : {added_by} \n"
             f"┗━━━━━━━━━★ "
         )
-        await app.send_photo(LOG_GROUP_ID, photo=image_url, caption=msg, reply_markup=InlineKeyboardMarkup([
+        await bot.send_photo(LOG_GROUP_ID, photo=image_url, caption=msg, reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("sᴇᴇ ʙᴏᴛ ᴀᴅᴅᴇᴅ ɢʀᴏᴜᴘ", url=chatusername)]
         ]))
 
