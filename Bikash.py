@@ -65,20 +65,38 @@ async def is_admins(chat_id: int):
         )
     ]
 
+            sender_id = message.from_user.id
+            sender_name = message.from_user.first_name
+            return await app.send_message(
+                config.LOG_GROUP_ID,
+                f"{message.from_user.mention} has just started Bot.\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
 
 @bot.on_message(filters.command("start") & filters.private)
 async def start_(client: Client, message: Message):
     response = requests.get(url).json()
     try:
         up = response['url']
+        sender_id = message.from_user.id
+        sender_name = message.from_user.first_name
         await message.reply_photo(up,
             caption=f"""**━━━━━━━━━━━━━━━━━━❥\n\n✯ Hᴇʟʟᴏ {message.from_user.mention} \n✯I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨\n✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ\n✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ \n✯ /chatbot on|off \n✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ\n\n━━━━━━━━━━━━━━━━━━❥**""",
             reply_markup=InlineKeyboardMarkup(STBUTTON)
         )
+        await bot.send_message(
+                LOG_GROUP_ID,
+                f"{message.from_user.mention} has just started Bot.\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
+        )
     except:
+        up = response['url']
+        sender_id = message.from_user.id
+        sender_name = message.from_user.first_name
         await message.reply_photo(up,
             caption=f"""**━━━━━━━━━━━━━━━━━━❥\n\n✯ Hᴇʟʟᴏ {message.from_user.mention} \n✯I'ᴍ A Aɪ Bᴀsᴇᴅ Cʜᴀᴛ Bᴏᴛ ✨\n✯ Mʏ Nᴀᴍᴇ Is Ꮥʜꫝʟɪɴɪ cɦαƭ ɓσƭ\n✯ ᴛᴏ ᴇɴᴀʙʟᴇ ᴄʜᴀᴛ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴅ ᴍᴇ ᴀɴᴅ ᴛʏᴘᴇ \n✯ /chatbot on|off \n✯ Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴJᴏʏ sᴜᴘᴇʀ Hɪɢʜ ǫᴜᴀʟɪᴛʏ ᴄʜᴀᴛ\n\n━━━━━━━━━━━━━━━━━━❥**""",
             reply_markup=InlineKeyboardMarkup(STBUTTON)
+        )
+        await bot.send_message(
+                LOG_GROUP_ID,
+                f"{message.from_user.mention} has just started Bot.\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
         )
 
     
