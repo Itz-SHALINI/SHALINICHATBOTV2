@@ -7,6 +7,10 @@ import random
 import os
 import re
 
+from os import getenv
+import time
+from dotenv import load_dotenv
+
 
 API_ID = os.environ.get("API_ID", "none") 
 API_HASH = os.environ.get("API_HASH", "none") 
