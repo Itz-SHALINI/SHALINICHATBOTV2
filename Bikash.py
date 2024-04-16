@@ -129,14 +129,14 @@ async def chatbotofd(client, message):
            await is_admins(chat_id)
         ):
            return await message.reply_text(
-                " 𝐇𝐞𝐲 𝐘𝐨𝐮 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐀 𝐀𝐝𝐦𝐢𝐧 "
+                " ᴀʀᴇ ʏᴏᴜ sᴜʀᴇ ʏᴏᴜ ᴀʀᴇ ᴀɴ ᴀᴅᴍɪɴ ?🧐 "
             )
     is_v = v.find_one({"chat_id": message.chat.id})
     if not is_v:
         v.insert_one({"chat_id": message.chat.id})
-        await message.reply_text(f"𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐃𝐢𝐬𝐚𝐛𝐥𝐞𝐝 🎋!")
+        await message.reply_text(f"ᴄʜᴀᴛʙᴏᴛ ᴅɪsᴀʙʟᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ 💔!")
     if is_v:
-        await message.reply_text(f" 𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐈𝐬 𝐀𝐥𝐫𝐞𝐚𝐝𝐲 𝐃𝐢𝐬𝐚𝐛𝐥𝐞𝐝 ")
+        await message.reply_text(f" ᴄʜᴀᴛʙᴏᴛ ɪs ᴀʟʀᴇᴀᴅʏ ᴅɪsᴀʙʟᴇᴅ ")
     
 
 @bot.on_message(
@@ -152,14 +152,14 @@ async def chatboton(client, message):
             await is_admins(chat_id)
         ):
             return await message.reply_text(
-                "You are not admin"
+                "ᴀʀᴇ ʏᴏᴜ sᴜʀᴇ ʏᴏᴜ ᴀʀᴇ ᴀɴ ᴀᴅᴍɪɴ ?🧐"
             )
     is_v = v.find_one({"chat_id": message.chat.id})
     if not is_v:           
-        await message.reply_text(f"𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐈𝐬 𝐀𝐥𝐫𝐞𝐚𝐝𝐲 𝐄𝐧𝐚𝐛𝐥𝐞𝐝")
+        await message.reply_text(f"ᴄʜᴀᴛʙᴏᴛ ɪs ᴀʟʀᴇᴀᴅʏ ᴇɴᴀʙʟᴇᴅ")
     if is_v:
         v.delete_one({"chat_id": message.chat.id})
-        await message.reply_text(f"𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐈𝐬 𝐄𝐧𝐚𝐛𝐥𝐞𝐝 ")
+        await message.reply_text(f"ᴄʜᴀᴛʙᴏᴛ ɪs ᴇɴᴀʙʟᴇᴅ 🥳 ")
     
 
 @bot.on_message(
