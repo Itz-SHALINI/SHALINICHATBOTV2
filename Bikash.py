@@ -6,7 +6,7 @@ import requests
 import random
 import os
 import re
-
+from pyrogram.enums import ChatMemberFilter
 from os import getenv
 import time
 
@@ -62,11 +62,13 @@ pht = random.choice(pht_list)
 url = f"https://api.waifu.pics/sfw/{pht}"
 
 
+
+
 async def is_admins(chat_id: int):
     return [
         member.user.id
         async for member in bot.get_chat_members(
-            chat_id, filter="administrators"
+            chat_id, filter=ChatMemberFilter.ADMINISTRATORS
         )
     ]
 
